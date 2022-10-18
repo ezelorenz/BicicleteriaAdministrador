@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bicicleteria-Gestor.DAL", "Bicicleteria-Gestor.DAL\Bicicleteria-Gestor.DAL.csproj", "{6543CA22-F47B-458D-B683-1CAEB12848AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bicicleteria-Gestor.BLL", "Bicicleteria-Gestor.BLL\Bicicleteria-Gestor.BLL.csproj", "{469BA420-4E67-49C3-96A8-D5FEA1864547}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bicicleteria-Gestor.IOC", "Bicicleteria-Gestor.IOC\Bicicleteria-Gestor.IOC.csproj", "{E8C3C374-C30A-4D7A-9571-F945E3A2EDD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bicicleteria-Gestor.ENTIDADES", "Bicicleteria-Gestor.ENTIDADES\Bicicleteria-Gestor.ENTIDADES.csproj", "{CED4AE4B-68C5-45E9-986F-2B88D1A33D8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bicicleteria-Gestor.APP", "Bicicleteria-Gestor.APP\Bicicleteria-Gestor.APP.csproj", "{32261EE9-18C9-4A69-B904-00E409847584}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6543CA22-F47B-458D-B683-1CAEB12848AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6543CA22-F47B-458D-B683-1CAEB12848AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6543CA22-F47B-458D-B683-1CAEB12848AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6543CA22-F47B-458D-B683-1CAEB12848AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{469BA420-4E67-49C3-96A8-D5FEA1864547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{469BA420-4E67-49C3-96A8-D5FEA1864547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{469BA420-4E67-49C3-96A8-D5FEA1864547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{469BA420-4E67-49C3-96A8-D5FEA1864547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8C3C374-C30A-4D7A-9571-F945E3A2EDD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8C3C374-C30A-4D7A-9571-F945E3A2EDD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8C3C374-C30A-4D7A-9571-F945E3A2EDD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8C3C374-C30A-4D7A-9571-F945E3A2EDD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CED4AE4B-68C5-45E9-986F-2B88D1A33D8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CED4AE4B-68C5-45E9-986F-2B88D1A33D8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CED4AE4B-68C5-45E9-986F-2B88D1A33D8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CED4AE4B-68C5-45E9-986F-2B88D1A33D8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32261EE9-18C9-4A69-B904-00E409847584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32261EE9-18C9-4A69-B904-00E409847584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32261EE9-18C9-4A69-B904-00E409847584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32261EE9-18C9-4A69-B904-00E409847584}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3280755-3EDA-42D9-9AC5-C9332717F985}
+	EndGlobalSection
+EndGlobal

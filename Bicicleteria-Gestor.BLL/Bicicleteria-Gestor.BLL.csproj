@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>Bicicleteria_Gestor.BLL</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FirebaseAuthentication.net" Version="3.7.2" />
+    <PackageReference Include="FirebaseStorage.net" Version="1.0.3" />
+    <PackageReference Include="XAct.Core.PCL" Version="0.0.5014" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bicicleteria-Gestor.DAL\Bicicleteria-Gestor.DAL.csproj" />
+    <ProjectReference Include="..\Bicicleteria-Gestor.ENTIDADES\Bicicleteria-Gestor.ENTIDADES.csproj" />
+  </ItemGroup>
+
+</Project>

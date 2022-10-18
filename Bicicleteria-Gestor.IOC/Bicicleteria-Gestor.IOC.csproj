@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>Bicicleteria_Gestor.IOC</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bicicleteria-Gestor.BLL\Bicicleteria-Gestor.BLL.csproj" />
+    <ProjectReference Include="..\Bicicleteria-Gestor.DAL\Bicicleteria-Gestor.DAL.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,15 @@
+D:\Repositorios\Bicicleteria-Gestor\Bicicleteria-Gestor.DAL\bin\Debug\net6.0\Bicicleteria-Gestor.DAL.deps.json
+D:\Repositorios\Bicicleteria-Gestor\Bicicleteria-Gestor.DAL\bin\Debug\net6.0\Bicicleteria-Gestor.DAL.dll
+D:\Repositorios\Bicicleteria-Gestor\Bicicleteria-Gestor.DAL\bin\Debug\net6.0\Bicicleteria-Gestor.DAL.pdb
+D:\Repositorios\Bicicleteria-Gestor\Bicicleteria-Gestor.DAL\bin\Debug\net6.0\Bicicleteria-Gestor.ENTIDADES.dll
+D:\Repositorios\Bicicleteria-Gestor\Bicicleteria-Gestor.DAL\bin\Debug\net6.0\Bicicleteria-Gestor.ENTIDADES.pdb
+D:\Repositorios\Bicicleteria-Gestor\Bicicleteria-Gestor.DAL\obj\Debug\net6.0\Bicicleteria-Gestor.DAL.csproj.AssemblyReference.cache
+D:\Repositorios\Bicicleteria-Gestor\Bicicleteria-Gestor.DAL\obj\Debug\net6.0\Bicicleteria-Gestor.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositorios\Bicicleteria-Gestor\Bicicleteria-Gestor.DAL\obj\Debug\net6.0\Bicicleteria-Gestor.DAL.AssemblyInfoInputs.cache
+D:\Repositorios\Bicicleteria-Gestor\Bicicleteria-Gestor.DAL\obj\Debug\net6.0\Bicicleteria-Gestor.DAL.AssemblyInfo.cs
+D:\Repositorios\Bicicleteria-Gestor\Bicicleteria-Gestor.DAL\obj\Debug\net6.0\Bicicleteria-Gestor.DAL.csproj.CoreCompileInputs.cache
+D:\Repositorios\Bicicleteria-Gestor\Bicicleteria-Gestor.DAL\obj\Debug\net6.0\Bicicleteria-Gestor.DAL.csproj.CopyComplete
+D:\Repositorios\Bicicleteria-Gestor\Bicicleteria-Gestor.DAL\obj\Debug\net6.0\Bicicleteria-Gestor.DAL.dll
+D:\Repositorios\Bicicleteria-Gestor\Bicicleteria-Gestor.DAL\obj\Debug\net6.0\refint\Bicicleteria-Gestor.DAL.dll
+D:\Repositorios\Bicicleteria-Gestor\Bicicleteria-Gestor.DAL\obj\Debug\net6.0\Bicicleteria-Gestor.DAL.pdb
+D:\Repositorios\Bicicleteria-Gestor\Bicicleteria-Gestor.DAL\obj\Debug\net6.0\ref\Bicicleteria-Gestor.DAL.dll
