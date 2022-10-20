@@ -1,5 +1,4 @@
 ﻿using Bicicleteria_Gestor.BLL.Interfaces;
-using System.Runtime.Intrinsics.Arm;
 using System.Text;
 using XSystem.Security.Cryptography;
 
@@ -15,12 +14,28 @@ namespace Bicicleteria_Gestor.BLL.Implementacion
         }
 
         // el siguiente metodo encipta la clave que el usuario va a ingresar, para que no se pueda entender en la base de datos
-
         public string CovertirSha256(string texto)
         {
-            StringBuilder Sb = new StringBuilder();
+            SHA1 sha1 = new SHA1CryptoServiceProvider();
+            Encoding enc = Encoding.UTF8;
 
-            using (SHA256 hash = SHA256Managed.Create())
+            byte[] result = sha1.ComputeHash(enc.GetBytes(texto));  //Convierte el texto en un array de bytes
+            StringBuilder sb = new StringBuilder();
+            //recorremos cada uno de los elementos dentro de result
+
+            foreach (byte b in result)
+            {
+                sb.Append(b.ToString("x2")); //Concatenar cada uno de los resultados a mi bariable Sb
+                                             //que la convierta a string y el doble de largo
+            }
+            return sb.ToString();
+        }
+
+        /*public string CovertirSha256(string texto)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            using (SHA256 hash = SHA256.Create())
             {
                 Encoding enc = Encoding.UTF8;
 
@@ -30,11 +45,11 @@ namespace Bicicleteria_Gestor.BLL.Implementacion
                 
                 foreach(byte b in result)
                 {
-                    Sb.Append(b.ToString("x2")); //Concatenar cada uno de los resultados a mi bariable Sb
+                    sb.Append(b.ToString("x2")); //Concatenar cada uno de los resultados a mi bariable Sb
                                                     //que la convierta a string y el doble de largo
                 }
             }
-            return Sb.ToString(); 
-        }
+            return sb.ToString(); 
+        }*/
     }
 }

@@ -54,6 +54,7 @@ namespace Bicicleteria_Gestor.BLL.Implementacion
                     .PutAsync(StreamArchivo, cancelacion.Token); //Guardar el archivo que recibe el metodo
 
                 UrlImagen = await tarea;
+                //return UrlImagen;
             }
             catch
             {
@@ -93,6 +94,8 @@ namespace Bicicleteria_Gestor.BLL.Implementacion
                     .Child(Config[CarpetaDestino])  //creacion Carpeta en firebase
                     .Child(NombreArchivo)           //creacion Archivo en firebase
                     .DeleteAsync();                 //Elimina el archivo
+
+                await tarea;
 
                 return true;
             }

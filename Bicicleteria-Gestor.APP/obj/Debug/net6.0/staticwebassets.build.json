@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "78OdaVW5U0hSZ6chiHgBPsroxww8TrLyxQMqhq6YKEU=",
+  "Hash": "wGhlhRgAqxzgvubNM1G2xEH4YpDX6sCaneD5nJCKht0=",
   "Source": "Bicicleteria-Gestor.APP",
   "BasePath": "_content/Bicicleteria-Gestor.APP",
   "Mode": "Default",
@@ -238,6 +238,23 @@
       "OriginalItemSpec": "wwwroot\\js\\sb-admin-2.min.js"
     },
     {
+      "Identity": "D:\\Repositorios\\Bicicleteria-Gestor\\Bicicleteria-Gestor.APP\\wwwroot\\js\\vistas\\Categoria_Index.js",
+      "SourceId": "Bicicleteria-Gestor.APP",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Repositorios\\Bicicleteria-Gestor\\Bicicleteria-Gestor.APP\\wwwroot\\",
+      "BasePath": "_content/Bicicleteria-Gestor.APP",
+      "RelativePath": "js/vistas/Categoria_Index.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\vistas\\Categoria_Index.js"
+    },
+    {
       "Identity": "D:\\Repositorios\\Bicicleteria-Gestor\\Bicicleteria-Gestor.APP\\wwwroot\\js\\vistas\\chart-bar-demo.js",
       "SourceId": "Bicicleteria-Gestor.APP",
       "SourceType": "Discovered",
@@ -287,6 +304,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\vistas\\datatables-demo.js"
+    },
+    {
+      "Identity": "D:\\Repositorios\\Bicicleteria-Gestor\\Bicicleteria-Gestor.APP\\wwwroot\\js\\vistas\\Usuario_Index.js",
+      "SourceId": "Bicicleteria-Gestor.APP",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Repositorios\\Bicicleteria-Gestor\\Bicicleteria-Gestor.APP\\wwwroot\\",
+      "BasePath": "_content/Bicicleteria-Gestor.APP",
+      "RelativePath": "js/vistas/Usuario_Index.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\vistas\\Usuario_Index.js"
     },
     {
       "Identity": "D:\\Repositorios\\Bicicleteria-Gestor\\Bicicleteria-Gestor.APP\\wwwroot\\scss\\_buttons.scss",

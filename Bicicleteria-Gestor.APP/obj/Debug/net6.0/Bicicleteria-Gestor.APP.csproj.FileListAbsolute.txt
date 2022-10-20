@@ -273,3 +273,5 @@ D:\Repositorios\Bicicleteria-Gestor\Bicicleteria-Gestor.APP\bin\Debug\net6.0\Fir
 D:\Repositorios\Bicicleteria-Gestor\Bicicleteria-Gestor.APP\bin\Debug\net6.0\Firebase.Storage.dll
 D:\Repositorios\Bicicleteria-Gestor\Bicicleteria-Gestor.APP\bin\Debug\net6.0\Microsoft.Practices.ServiceLocation.dll
 D:\Repositorios\Bicicleteria-Gestor\Bicicleteria-Gestor.APP\bin\Debug\net6.0\XAct.Core.PCL.dll
+D:\Repositorios\Bicicleteria-Gestor\Bicicleteria-Gestor.APP\bin\Debug\net6.0\AutoMapper.dll
+D:\Repositorios\Bicicleteria-Gestor\Bicicleteria-Gestor.APP\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

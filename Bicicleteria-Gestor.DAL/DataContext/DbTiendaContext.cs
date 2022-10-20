@@ -14,7 +14,7 @@ namespace Bicicleteria_Gestor.DAL
         {
         }
 
-        public virtual DbSet<Categoria> Categorias { get; set; } = null!;
+        public virtual DbSet<Categoria> Categoria { get; set; } = null!;
         public virtual DbSet<Cliente> Clientes { get; set; } = null!;
         public virtual DbSet<Configuracion> Configuraciones { get; set; } = null!;
         public virtual DbSet<DetalleVenta> DetalleVentas { get; set; } = null!;

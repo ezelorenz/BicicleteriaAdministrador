@@ -1,14 +1,8 @@
 ﻿using Bicicleteria_Gestor.BLL.Interfaces;
 using Bicicleteria_Gestor.DAL.Interfaces;
 using Bicicleteria_Gestor.ENTIDADES;
-using System;
-using System.Collections.Generic;
-using System.Data.SqlTypes;
-using System.Linq;
 using System.Net;
 using System.Net.Mail;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Bicicleteria_Gestor.BLL.Implementacion
 {
@@ -46,20 +40,20 @@ namespace Bicicleteria_Gestor.BLL.Implementacion
 
                 var clienteServidor = new SmtpClient()
                 {
-                    Host = Config["hots"],
+                    Credentials = credenciales,
+                    Host = Config["host"],
                     Port = int.Parse(Config["puerto"]),
                     DeliveryMethod = SmtpDeliveryMethod.Network,
                     UseDefaultCredentials = false,
                     EnableSsl = true
                 };
-
                 clienteServidor.Send(correo);
-                return true;
             }
             catch
             {
                 return false;
             }
+            return true;
         }
     }
 }

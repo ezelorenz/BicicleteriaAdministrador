@@ -31,6 +31,17 @@ namespace Bicicleteria_Gestor.APP.Utilidades.Automapper
                             opt => opt.Ignore());
 
             #endregion
+
+            #region Categoria
+
+            CreateMap<Categoria, VMCategoria>()
+                .ForMember(d => d.EsActivo,
+                            opt => opt.MapFrom(o => o.EsActivo == true ? 1 : 0));
+
+            CreateMap<VMCategoria, Categoria>()
+                .ForMember(d => d.EsActivo,
+                            opt => opt.MapFrom(o => o.EsActivo == 1 ? true : false));
+            #endregion
         }
     }
 }
