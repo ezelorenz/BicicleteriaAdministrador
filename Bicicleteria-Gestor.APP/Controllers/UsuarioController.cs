@@ -3,11 +3,13 @@ using Bicicleteria_Gestor.APP.Models.ViewModels;
 using Bicicleteria_Gestor.APP.Utilidades.Response;
 using Bicicleteria_Gestor.BLL.Interfaces;
 using Bicicleteria_Gestor.ENTIDADES;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
 namespace Bicicleteria_Gestor.APP.Controllers
 {
+    [Authorize]
     public class UsuarioController : Controller
     {
         private readonly IUsuarioService _usuarioService;

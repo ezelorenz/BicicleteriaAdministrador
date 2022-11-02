@@ -1,13 +1,14 @@
 ﻿using AutoMapper;
 using Bicicleteria_Gestor.APP.Models.ViewModels;
 using Bicicleteria_Gestor.APP.Utilidades.Response;
-using Bicicleteria_Gestor.BLL.Implementacion;
 using Bicicleteria_Gestor.BLL.Interfaces;
 using Bicicleteria_Gestor.ENTIDADES;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Bicicleteria_Gestor.APP.Controllers
 {
+    [Authorize]
     public class CategoriaController : Controller
     {
         private readonly IMapper _mapper;
@@ -27,8 +28,7 @@ namespace Bicicleteria_Gestor.APP.Controllers
         [HttpGet]
         public async Task<IActionResult> Lista()
         {
-            var lista = await _categoriaService.Lista();
-            List<VMCategoria> vmListaCategorias = _mapper.Map<List<VMCategoria>>(lista);
+            List<VMCategoria> vmListaCategorias = _mapper.Map<List<VMCategoria>>(await _categoriaService.Lista());
             return StatusCode(StatusCodes.Status200OK, 
                 new
                 {

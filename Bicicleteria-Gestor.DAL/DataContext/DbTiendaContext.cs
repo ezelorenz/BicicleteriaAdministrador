@@ -15,19 +15,19 @@ namespace Bicicleteria_Gestor.DAL
         }
 
         public virtual DbSet<Categoria> Categoria { get; set; } = null!;
-        public virtual DbSet<Cliente> Clientes { get; set; } = null!;
-        public virtual DbSet<Configuracion> Configuraciones { get; set; } = null!;
-        public virtual DbSet<DetalleVenta> DetalleVentas { get; set; } = null!;
-        public virtual DbSet<Deuda> Deudas { get; set; } = null!;
-        public virtual DbSet<Menu> Menus { get; set; } = null!;
-        public virtual DbSet<Negocio> Negocios { get; set; } = null!;
-        public virtual DbSet<NumeroCorrelativo> NumeroCorrelativos { get; set; } = null!;
+        public virtual DbSet<Cliente> Cliente { get; set; } = null!;
+        public virtual DbSet<Configuracion> Configuracion { get; set; } = null!;
+        public virtual DbSet<DetalleVenta> DetalleVenta { get; set; } = null!;
+        public virtual DbSet<Deuda> Deuda { get; set; } = null!;
+        public virtual DbSet<Menu> Menu { get; set; } = null!;
+        public virtual DbSet<Negocio> Negocio { get; set; } = null!;
+        public virtual DbSet<NumeroCorrelativo> NumeroCorrelativo { get; set; } = null!;
         public virtual DbSet<Producto> Productos { get; set; } = null!;
         public virtual DbSet<Rol> Rols { get; set; } = null!;
         public virtual DbSet<RolMenu> RolMenus { get; set; } = null!;
         public virtual DbSet<TipoDocumentoVenta> TipoDocumentoVentas { get; set; } = null!;
         public virtual DbSet<Usuario> Usuarios { get; set; } = null!;
-        public virtual DbSet<Venta> Ventas { get; set; } = null!;
+        public virtual DbSet<Venta> Venta { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

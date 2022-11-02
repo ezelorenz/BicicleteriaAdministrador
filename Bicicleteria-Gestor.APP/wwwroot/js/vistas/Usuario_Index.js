@@ -249,7 +249,7 @@ $("#tbdata tbody").on("click", ".btn-eliminar", function () {
                             $("#modalData").modal("hide");
                             swal("Listo!", "El Usuario fue eliminado", "success")
                         } else {
-                            swal("Lo sentimos", responseJson.mensaje, "error")
+                                
                         }
                     })
             }

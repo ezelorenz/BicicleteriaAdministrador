@@ -18,12 +18,18 @@ namespace Bicicleteria_Gestor.IOC
 
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
+            services.AddScoped<IVentaRepository, VentaRepository>();
             services.AddScoped<ICorreoService, CorreoService>();
             services.AddScoped<IFireBaseService, FireBaseService>();
             services.AddScoped<IUtilidadesService, UtilidadesService>();
             services.AddScoped<IRolService, RolService>();
             services.AddScoped<IUsuarioService, UsuarioService>();
             services.AddScoped<ICategoriaService, CategoriaService>();
+            services.AddScoped<IProductoService, ProductoService>();
+            services.AddScoped<ITipoDocumentoVentaService, TipoDocumentoVentaService>();
+            services.AddScoped<IVentaService, VentaService>();
+            services.AddScoped<IClienteService, ClienteService>();
+            services.AddScoped<IDashboardService, DashBoardService>();
         }
     }
 }

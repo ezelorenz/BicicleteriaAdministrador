@@ -1,10 +1,18 @@
 using Bicicleteria_Gestor.APP.Utilidades.Automapper;
 using Bicicleteria_Gestor.IOC;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+        .AddCookie(opt =>
+        {
+            opt.LoginPath = "/Acceso/Login";
+            opt.ExpireTimeSpan = TimeSpan.FromMinutes(20);
+        });
 
 builder.Services.InyectarDependencia(builder.Configuration);
 builder.Services.AddAutoMapper(typeof(AutomapperProfile));
@@ -24,10 +32,12 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
+
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Inicio}/{action=Index}/{id?}");
+    pattern: "{controller=Acceso}/{action=Login}/{id?}");
 
 app.Run();

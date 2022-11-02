@@ -3,11 +3,6 @@ using Bicicleteria_Gestor.DAL.Interfaces;
 using Bicicleteria_Gestor.ENTIDADES;
 using Firebase.Auth;
 using Firebase.Storage;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Bicicleteria_Gestor.BLL.Implementacion
 {
@@ -54,7 +49,7 @@ namespace Bicicleteria_Gestor.BLL.Implementacion
                     .PutAsync(StreamArchivo, cancelacion.Token); //Guardar el archivo que recibe el metodo
 
                 UrlImagen = await tarea;
-                //return UrlImagen;
+                
             }
             catch
             {

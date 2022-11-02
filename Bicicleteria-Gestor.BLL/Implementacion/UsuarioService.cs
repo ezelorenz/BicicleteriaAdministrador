@@ -36,7 +36,7 @@ namespace Bicicleteria_Gestor.BLL.Implementacion
         {
             string clave_encriptada = _utilidadesService.CovertirSha256(clave);
 
-            Usuario usuario_encontrado = await repo.Obtener(u => u.Correo.Equals(correo) && u.Clave.Equals(clave));
+            Usuario usuario_encontrado = await repo.Obtener(u => u.Correo.Equals(correo) && u.Clave.Equals(clave_encriptada));
             return usuario_encontrado;
         }
 
