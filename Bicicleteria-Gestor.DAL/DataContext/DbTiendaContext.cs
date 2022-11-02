@@ -15,24 +15,22 @@ namespace Bicicleteria_Gestor.DAL
         }
 
         public virtual DbSet<Categoria> Categoria { get; set; } = null!;
-        public virtual DbSet<Cliente> Cliente { get; set; } = null!;
+        public virtual DbSet<Cliente> Clientes { get; set; } = null!;
         public virtual DbSet<Configuracion> Configuracion { get; set; } = null!;
         public virtual DbSet<DetalleVenta> DetalleVenta { get; set; } = null!;
         public virtual DbSet<Deuda> Deuda { get; set; } = null!;
         public virtual DbSet<Menu> Menu { get; set; } = null!;
-        public virtual DbSet<Negocio> Negocio { get; set; } = null!;
         public virtual DbSet<NumeroCorrelativo> NumeroCorrelativo { get; set; } = null!;
         public virtual DbSet<Producto> Productos { get; set; } = null!;
         public virtual DbSet<Rol> Rols { get; set; } = null!;
         public virtual DbSet<RolMenu> RolMenus { get; set; } = null!;
-        public virtual DbSet<TipoDocumentoVenta> TipoDocumentoVentas { get; set; } = null!;
         public virtual DbSet<Usuario> Usuarios { get; set; } = null!;
         public virtual DbSet<Venta> Venta { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
-            { 
+            {
             }
         }
 
@@ -228,62 +226,6 @@ namespace Bicicleteria_Gestor.DAL
                     .HasConstraintName("FK__Menu__idMenuPadr__24927208");
             });
 
-            modelBuilder.Entity<Negocio>(entity =>
-            {
-                entity.HasKey(e => e.IdNegocio)
-                    .HasName("PK__Negocio__70E1E10799DD9D80");
-
-                entity.ToTable("Negocio");
-
-                entity.Property(e => e.IdNegocio)
-                    .ValueGeneratedNever()
-                    .HasColumnName("idNegocio");
-
-                entity.Property(e => e.Correo)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("correo");
-
-                entity.Property(e => e.Direccion)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("direccion");
-
-                entity.Property(e => e.Nombre)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("nombre");
-
-                entity.Property(e => e.NombreLogo)
-                    .HasMaxLength(100)
-                    .IsUnicode(false)
-                    .HasColumnName("nombreLogo");
-
-                entity.Property(e => e.NumeroDocumento)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("numeroDocumento");
-
-                entity.Property(e => e.PorcentajeImpuesto)
-                    .HasColumnType("decimal(10, 2)")
-                    .HasColumnName("porcentajeImpuesto");
-
-                entity.Property(e => e.SimboloMoneda)
-                    .HasMaxLength(5)
-                    .IsUnicode(false)
-                    .HasColumnName("simboloMoneda");
-
-                entity.Property(e => e.Telefono)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("telefono");
-
-                entity.Property(e => e.UrlLogo)
-                    .HasMaxLength(500)
-                    .IsUnicode(false)
-                    .HasColumnName("urlLogo");
-            });
-
             modelBuilder.Entity<NumeroCorrelativo>(entity =>
             {
                 entity.HasKey(e => e.IdNumeroCorrelativo)
@@ -415,26 +357,6 @@ namespace Bicicleteria_Gestor.DAL
                     .HasConstraintName("FK__RolMenu__idRol__2B3F6F97");
             });
 
-            modelBuilder.Entity<TipoDocumentoVenta>(entity =>
-            {
-                entity.HasKey(e => e.IdTipoDocumentoVenta)
-                    .HasName("PK__TipoDocu__A9D59AEEA7DD065D");
-
-                entity.Property(e => e.IdTipoDocumentoVenta).HasColumnName("idTipoDocumentoVenta");
-
-                entity.Property(e => e.Descripcion)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("descripcion");
-
-                entity.Property(e => e.EsActivo).HasColumnName("esActivo");
-
-                entity.Property(e => e.FechaRegistro)
-                    .HasColumnType("datetime")
-                    .HasColumnName("fechaRegistro")
-                    .HasDefaultValueSql("(getdate())");
-            });
-
             modelBuilder.Entity<Usuario>(entity =>
             {
                 entity.HasKey(e => e.IdUsuario)
@@ -496,6 +418,11 @@ namespace Bicicleteria_Gestor.DAL
 
                 entity.Property(e => e.IdVenta).HasColumnName("idVenta");
 
+                entity.Property(e => e.DocumentoCliente)
+                    .HasMaxLength(10)
+                    .IsUnicode(false)
+                    .HasColumnName("documentoCliente");
+
                 entity.Property(e => e.FechaRegistro)
                     .HasColumnType("datetime")
                     .HasColumnName("fechaRegistro")
@@ -503,22 +430,17 @@ namespace Bicicleteria_Gestor.DAL
 
                 entity.Property(e => e.IdCliente).HasColumnName("idCliente");
 
-                entity.Property(e => e.IdTipoDocumentoVenta).HasColumnName("idTipoDocumentoVenta");
-
                 entity.Property(e => e.IdUsuario).HasColumnName("idUsuario");
 
-                entity.Property(e => e.ImpuestoTotal)
-                    .HasColumnType("decimal(10, 2)")
-                    .HasColumnName("impuestoTotal");
+                entity.Property(e => e.NombreCliente)
+                    .HasMaxLength(20)
+                    .IsUnicode(false)
+                    .HasColumnName("nombreCliente");
 
                 entity.Property(e => e.NumeroVenta)
                     .HasMaxLength(6)
                     .IsUnicode(false)
                     .HasColumnName("numeroVenta");
-
-                entity.Property(e => e.SubTotal)
-                    .HasColumnType("decimal(10, 2)")
-                    .HasColumnName("subTotal");
 
                 entity.Property(e => e.Total).HasColumnType("decimal(10, 2)");
 
@@ -526,11 +448,6 @@ namespace Bicicleteria_Gestor.DAL
                     .WithMany(p => p.Venta)
                     .HasForeignKey(d => d.IdCliente)
                     .HasConstraintName("FK__Venta__idCliente__70DDC3D8");
-
-                entity.HasOne(d => d.IdTipoDocumentoVentaNavigation)
-                    .WithMany(p => p.Venta)
-                    .HasForeignKey(d => d.IdTipoDocumentoVenta)
-                    .HasConstraintName("FK__Venta__idTipoDoc__3F466844");
 
                 entity.HasOne(d => d.IdUsuarioNavigation)
                     .WithMany(p => p.Venta)

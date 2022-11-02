@@ -26,7 +26,6 @@ namespace Bicicleteria_Gestor.IOC
             services.AddScoped<IUsuarioService, UsuarioService>();
             services.AddScoped<ICategoriaService, CategoriaService>();
             services.AddScoped<IProductoService, ProductoService>();
-            services.AddScoped<ITipoDocumentoVentaService, TipoDocumentoVentaService>();
             services.AddScoped<IVentaService, VentaService>();
             services.AddScoped<IClienteService, ClienteService>();
             services.AddScoped<IDashboardService, DashBoardService>();

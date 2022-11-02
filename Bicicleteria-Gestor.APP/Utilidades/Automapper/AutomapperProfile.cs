@@ -63,12 +63,6 @@ namespace Bicicleteria_Gestor.APP.Utilidades.Automapper
 
             #endregion
 
-            #region TipoDocumentoVenta
-            
-
-            CreateMap<VMTipoDocumentoVenta, TipoDocumentoVenta>().ReverseMap();
-            #endregion
-
             #region Venta
             CreateMap<Venta, VMVenta>()
                 .ForMember(d => d.Usuario,
