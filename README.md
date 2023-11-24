@@ -13,9 +13,6 @@ En el dashboard, visualizaremos un resumen gráfico de ventas, ingresos, product
 - Mantenedor de usuarios: crear, editar, eliminar usuarios.
 - Envío de códigos de acceso por correo para cambiar la contraseña.
 
-#### Negocio
-
-- Configuración de la tienda: número de documento, razón social, dirección, teléfono, impuesto, símbolo de moneda y logo.
 
 ### 3. Inventario
 
